@@ -1,6 +1,14 @@
 source 'https://rubygems.org'
 
 
+gem 'annotate'#for model
+group :test, :develpment do
+  gem 'cucumber-rails', :require =>false #bdd
+  gem 'cucumber-rails-training-wheels'# get starting with cucumver
+  gem 'database_cleaner'
+  gem 'capybara' #framework 
+  gem 'launchy'
+end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
@@ -37,4 +45,3 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
